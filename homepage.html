@@ -1,0 +1,94 @@
+<!doctype html>
+<head>
+    <title>andrebluehs dot net</title>
+    <meta name="author" content="Andre Bluehs">
+
+    <style>
+        body, html, #container {
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            margin:0;
+            background: #E9E8ED;
+            color: #475057;
+            font-family: sans-serif;
+        }
+        a:focus{
+            outline:thin dotted
+        }
+        a:active,a:hover{
+            outline:0
+        }
+        a,a:visited{
+            font-weight:bold;
+            color:rgb(96, 118, 211);
+        }
+        a:hover{
+            text-decoration:underline;
+            color:rgb(69, 82, 139);
+        }
+        #right {
+            text-align: right;
+            padding-right: 10%;
+            height: 170px;
+            top: 50%;
+            position: relative;
+            margin-top: -85px;
+        }
+        #right h1 {
+            font-size: 6em;
+            margin:0;
+        }
+        .horizontal {
+            list-style:none;
+            padding:0;
+            margin:0;
+        }
+        .horizontal li {
+            display: inline;
+        }
+        .horizontal li a {
+            text-decoration: none;
+            font-size: 2em;
+            margin-left: 20px;
+        }
+
+        @media (max-width:1220px) {
+            .horizontal li a {
+                font-size:1.5em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .horizontal li a {
+                font-size:1em;
+            }
+            #right h1 {
+                font-size:4em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #right .horizontal li {
+                display:block;
+            }
+            #right h1 {
+                font-size:2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id='container'>
+        <div id='right'>
+            <h1>andre bluehs</h1>
+            <ul class='horizontal'>
+                <li><a href='http://twitter.com/helloandre' target='_blank'>twitter</a></li>
+                <li><a href='http://github.com/helloandre' target='_blank'>github</a></li>
+                <li><a href='http://stackoverflow.com/users/50/helloandre' target='_blank'>stackoverflow</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
